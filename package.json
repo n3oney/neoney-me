@@ -22,6 +22,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.4.12",
+    "postcss-nested": "^5.0.6",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0",
@@ -31,5 +32,8 @@
     "tslib": "^2.3.1",
     "typescript": "~4.6.2"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-icons": "^2.1.0"
+  }
 }
