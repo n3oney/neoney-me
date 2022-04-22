@@ -1,18 +1,29 @@
 <script lang="ts">
-	let x = -1000;
-	let y = -1000;
+	let pageX = -1000;
+	let pageY = -1000;
+    let scrollX = 0;
+    let scrollY = 0;
+
+    $: x = pageX - scrollX;
+    $: y = pageY - scrollY;
 
 	function handleMouseMove(e: MouseEvent) {
-		x = e.x;
-		y = e.y;
+		pageX = e.pageX;
+	    pageY = e.pageY;
 	}
+
+    function handleScroll(e: UIEvent) {
+        scrollX = window.scrollX;
+        scrollY = window.scrollY;
+    }
 </script>
 
 <svelte:head>
 	<title>neoney's website</title>
 </svelte:head>
 
-<svelte:body on:mousemove={handleMouseMove} />
+<svelte:body on:mousemove={handleMouseMove} on:pointermove={handleMouseMove}  />
+<svelte:window on:scroll={handleScroll}/>
 
 <div
 	id="cursor"
