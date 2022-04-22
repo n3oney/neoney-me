@@ -1,22 +1,16 @@
-# create-svelte
+<h1 align="center">neoney-me</h1>
+<p align="center">My personal website.</p>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a SvelteKit Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Preview
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
+This website is automatically deployed on [Vercel](https://vercel.com).  
+You can access the production build on [neoney-me.vercel.app](https://neoney-me.vercel.app), and the `main` branch on [neoney-me-git-main-neoney.vercel.app](https://neoney-me-git-main-neoney.vercel.app).
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+After cloning this repository, install the dependencies with `npm install` (or `pnpm install` or `yarn`) and start a development server:
 
 ```bash
 npm run dev
@@ -25,14 +19,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Contributing
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+If you want to contribute, create a fork of this repository and work on the `main` branch.
+After you've created a feature, feel free to send a pull request for me to merge it into the `production` branch.
