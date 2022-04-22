@@ -1,6 +1,7 @@
 <script>
     import '../app.css';
     import '../roboto.css';
+    import '../montserrat.css';
 </script>
 
 <svelte:head>
