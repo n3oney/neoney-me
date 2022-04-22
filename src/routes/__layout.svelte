@@ -1,13 +1,12 @@
 <script>
-    import '../app.css';
-    import '../roboto.css';
-    import '../montserrat.css';
+	import '../app.css';
+	import '../roboto.css';
+	import '../montserrat.css';
+    import Cursor from '../components/Cursor.svelte';
 </script>
 
-<svelte:head>
-    <title>neoney's website</title>
-</svelte:head>
+<Cursor />
 
 <main>
-    <slot/>
+	<slot />
 </main>
