@@ -1,5 +1,6 @@
 <script>
     import '../app.css';
+    import '../roboto.css';
 </script>
 
 <svelte:head>
