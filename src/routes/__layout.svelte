@@ -2,6 +2,10 @@
     import '../app.css';
 </script>
 
-<main class='p-4'>
+<svelte:head>
+    <title>neoney's website</title>
+</svelte:head>
+
+<main>
     <slot/>
 </main>

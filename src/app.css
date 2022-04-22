@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h-screen {
+	height: 100vh;
+	height: -webkit-fill-available;
+}
+
+body {
+	min-height: 100vh;
+	/* fix for mobile browsers */
+	min-height: -webkit-fill-available;
+	@apply bg-background-900 text-white/80 font-body;
+}
+
+html {
+	height: -webkit-fill-available;
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  color: #ff5adc;
+
+	@supports (background-clip: text) {
+	  color: transparent;
+		background-image: linear-gradient(90deg, #ff5adc, #3943b7, #ff5adc);
+    background-size: 200% 100%;
+		background-clip: text;
+  }
+}
+
+.text-gradient-animated {
+  @apply text-gradient;
+
+  animation: gradient 10s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 0%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
