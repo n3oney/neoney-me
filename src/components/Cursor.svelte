@@ -16,6 +16,11 @@
         scrollX = window.scrollX;
         scrollY = window.scrollY;
     }
+
+    function handleWheel(e: WheelEvent) {
+        pageX = e.pageX;
+        pageY = e.pageY;
+    }
 </script>
 
 <svelte:head>
@@ -23,7 +28,7 @@
 </svelte:head>
 
 <svelte:body on:mousemove={handleMouseMove} on:pointermove={handleMouseMove}  />
-<svelte:window on:scroll={handleScroll}/>
+<svelte:window on:scroll={handleScroll} on:wheel={handleWheel}/>
 
 <div
 	id="cursor"
