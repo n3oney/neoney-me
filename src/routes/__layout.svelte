@@ -5,6 +5,15 @@
     import Cursor from '../components/Cursor.svelte';
 </script>
 
+<svelte:head>
+	<meta property="og:title" content="neoney's website" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://neoney.me" />
+	<meta property="og:image" content="https://neoney.me/embed.png" />
+	<meta property="og:locale" content="pl_PL" />
+	<meta name="theme-color" content="#FF5ADC" />
+</svelte:head>
+
 <Cursor />
 
 <main> 
