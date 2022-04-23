@@ -1,6 +1,7 @@
 <script>
 	import ScrollArrow from '../components/ScrollArrow.svelte';
 	import skills from '../assets/skills.svg';
+	import ProjectsSection from '../components/ProjectsSection.svelte';
 </script>
 
 <section id="home" class="px-4 flex flex-col justify-center items-center min-h-screen text-center">
@@ -52,3 +53,5 @@
 	</div>
 	<img class="hidden lg:block h-screen" src={skills} alt="" />
 </section>
+
+<ProjectsSection />
