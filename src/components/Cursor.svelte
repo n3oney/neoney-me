@@ -1,25 +1,15 @@
 <script lang="ts">
-	let pageX = -1000;
-	let pageY = -1000;
-    let scrollX = 0;
-    let scrollY = 0;
-
-    $: x = pageX - scrollX;
-    $: y = pageY - scrollY;
+	let x = -1000;
+    let y = -1000;
 
 	function handleMouseMove(e: MouseEvent) {
-		pageX = e.pageX;
-	    pageY = e.pageY;
+		x = e.clientX;
+		y = e.clientY;
 	}
 
-    function handleScroll(e: UIEvent) {
-        scrollX = window.scrollX;
-        scrollY = window.scrollY;
-    }
-
-    function handleWheel(e: WheelEvent) {
-        pageX = e.pageX;
-        pageY = e.pageY;
+    function handleTouch(e: TouchEvent) {
+        x = e.touches[0].pageX;
+        y = e.touches[0].pageY;
     }
 </script>
 
@@ -27,8 +17,10 @@
 	<title>neoney's website</title>
 </svelte:head>
 
-<svelte:body on:mousemove={handleMouseMove} on:pointermove={handleMouseMove}  />
-<svelte:window on:scroll={handleScroll} on:wheel={handleWheel}/>
+<svelte:body
+	on:pointermove={handleMouseMove}
+	on:touchmove={handleTouch}
+    on:touchstart={handleTouch} />
 
 <div
 	id="cursor"

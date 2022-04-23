@@ -7,6 +7,6 @@
 
 <Cursor />
 
-<main>
+<main> 
 	<slot />
 </main>

@@ -6,37 +6,27 @@
 
 <section
 	id="social"
-	class="flex flex-col justify-center items-center min-h-screen border-t border-gray-600/25 font-medium"
+	class="py-16 px-8 flex flex-col justify-center items-center min-h-screen border-t border-gray-600/25 font-medium"
 >
 	<h1 class="font-header font-extrabold text-6xl text-center">Contact me!</h1>
-	<table class="text-xl">
-		<tbody>
-			<tr
-				class="cursor-pointer"
-				on:click={() => (window.location.href = 'https://twitter.com/neoneydev')}
-			>
-				<td class="h-[1.5em] text-[#1DA1F2]"><IoLogoTwitter /></td>
-				<td>@neoneydev</td>
-			</tr>
-			<tr>
-				<td class="h-[1.5em] text-[#5865F2]"><FaDiscord /></td>
-				<td>neoney<span class="text-gray-500">#7991</span></td>
-			</tr>
-			<tr class="cursor-pointer" on:click={() => (window.location.href = 'mailto:neoney@pm.me')}>
-				<td class="h-[1.5em]"><FaMailBulk /></td>
-				<td>neoney@pm.me</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="text-xl grid social-grid gap-3 mt-6">
+		<a href="https://twitter.com/neoneydev" class="justify-self-end h-[1.5em] text-[#1DA1F2]">
+			<IoLogoTwitter />
+		</a>
+		<a href="https://twitter.com/neoneydev">@neoneydev</a>
+		<div class="h-[1.5em] text-[#5865F2] justify-self-end">
+			<FaDiscord />
+		</div>
+		<div>neoney<span class="text-gray-500">#7991</span></div>
+		<a class="cursor-pointer justify-self-end h-[1.5em]" href="mailto:neoney@pm.me">
+			<FaMailBulk />
+		</a>
+		<a href="mailto:neoney@pm.me">neoney@pm.me</a>
+	</div>
 </section>
 
 <style>
-	table td:first-child {
-		text-align: right;
-	}
-
-	table {
-		border-spacing: 0.2em 0.5em;
-		border-collapse: separate;
+	.social-grid {
+		grid-template-columns: 1.5em 1fr;
 	}
 </style>
