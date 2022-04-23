@@ -10,7 +10,8 @@ module.exports = {
 		extend: {
 			colors: {
 				background: {
-					900: '#171717'
+					900: '#171717',
+					800: '#202020'
 				},
 				hotPink: '#ff5adc',
 				blueish: '#3943b7',
