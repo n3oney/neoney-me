@@ -12,6 +12,8 @@
 	<meta property="og:image" content="https://neoney.me/embed.png" />
 	<meta property="og:locale" content="pl_PL" />
 	<meta name="theme-color" content="#FF5ADC" />
+
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <Cursor />
