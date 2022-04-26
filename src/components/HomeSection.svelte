@@ -2,7 +2,7 @@
     import ScrollArrow from "./ScrollArrow.svelte";
 </script>
 
-<section id="home" class="px-4 flex flex-col justify-center items-center min-h-screen text-center">
+<section id="home" class="px-4 flex flex-col justify-center items-center min-h-full text-center">
 	<div class="h-20 flex-grow" />
 
 	<h1 class="font-header text-6xl font-extrabold">

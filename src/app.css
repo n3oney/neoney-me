@@ -2,17 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.h-screen {
-	height: 100vh;
-	height: -webkit-fill-available;
+.min-h-full {
+  min-height: 100%;
+  min-height: -webkit-fill-available;
 }
 
 body {
-	min-height: 100vh;
+	height: 100vh;
 	/* fix for mobile browsers */
-	min-height: -webkit-fill-available;
+	height: -webkit-fill-available;
 	@apply bg-background-900 text-white/80 font-body;
   overflow: hidden;
+}
+
+body>div, body>div>main, #index-snap {
+  height: 100%;
+  height: -webkit-fill-available;
 }
 
 html {

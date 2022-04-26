@@ -5,7 +5,7 @@
 	import SocialSection from '../components/SocialSection.svelte';
 </script>
 
-<div id="index-snap" class="h-screen overflow-auto snap-y snap-proximity child:snap-center scroll-smooth">
+<div id="index-snap" class="h-full overflow-auto snap-y snap-proximity child:snap-center scroll-smooth">
 	<HomeSection />
 	<SkillsSection />
 	<ProjectsSection />
