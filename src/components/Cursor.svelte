@@ -13,6 +13,14 @@
     }
 </script>
 
+<style>
+	@supports (not (mix-blend-mode: darken)) {
+		#cursor {
+			display: none !important;
+		}
+	}
+</style>
+
 <svelte:head>
 	<title>neoney's website</title>
 </svelte:head>
