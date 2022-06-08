@@ -2,7 +2,6 @@
 	import '../app.css';
 	import '../roboto.css';
 	import '../montserrat.css';
-    import Cursor from '../components/Cursor.svelte';
 </script>
 
 <svelte:head>
@@ -14,9 +13,10 @@
 	<meta name="theme-color" content="#FF5ADC" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-</svelte:head>
 
-<Cursor />
+
+	<title>neoney's website</title>
+</svelte:head>
 
 <main> 
 	<slot />
