@@ -18,10 +18,10 @@
 			<FaDiscord />
 		</div>
 		<div>neoney<span class="text-gray-500">#7991</span></div>
-		<a class="cursor-pointer justify-self-end h-[1.5em]" href="mailto:neoney@pm.me">
+		<a class="cursor-pointer justify-self-end h-[1.5em]" href="mailto:neo@neoney.dev">
 			<FaMailBulk />
 		</a>
-		<a href="mailto:neoney@pm.me">neoney@pm.me</a>
+		<a href="mailto:neo@neoney.dev">neo@neoney.dev</a>
 	</div>
 </section>
 
