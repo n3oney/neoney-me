@@ -15,7 +15,7 @@
 		<Project title="This website" url="https://github.com/n3oney/neoney-me">
 			This website is open-source, with the source code being available on GitHub.
 		</Project>
-		<Project title="InPost QR Generator" url="https://inpost.neoney.me">
+		<Project title="InPost QR Generator" url="https://inpost.neoney.dev">
 			An open-source web app for generating QR codes for InPost's parcel lockers.
 		</Project>
 		<Project title="Discord Update Skip" url="https://github.com/n3oney/discord-update-skip">
@@ -24,7 +24,7 @@
 		<Project title="Voice Chat Generator" url="https://github.com/n3oney/voice-chat-generator">
 			A Discord bot that dynamically generates voice channels.
 		</Project>
-		<Project title="Nexe Ban Appeals" url="https://nexe.neoney.me">
+		<Project title="Nexe Ban Appeals" url="https://nexe.neoney.dev">
 			A website where one can send a ban appeal from <a
 				href="https://www.youtube.com/c/Nexee"
 				class="text-hotPink">Nexe</a
